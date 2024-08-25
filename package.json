@@ -8,7 +8,7 @@
     "nvmrc-checker": "./dist/cli.js"
   },
   "scripts": {
-    "build": "tsc && chmod +x dist/cli.js",
+    "build": "rm -rf dist && tsc && chmod +x dist/cli.js",
     "test": "jest",
     "prepublishOnly": "npm run build"
   },
